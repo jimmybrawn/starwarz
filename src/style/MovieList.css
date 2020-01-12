@@ -1,0 +1,44 @@
+.MovieList {
+  color: white;
+  max-width: 936px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 23px;
+  grid-auto-rows: 168px;
+  grid-column-gap: 45px;
+}
+
+.MovieList__item {
+  width: 100%;
+  background-color: #3598db;
+  border-radius: 10px;
+  text-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.MovieList__item a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding-top: 60px;
+}
+
+@media only screen and (min-width: 768px) {
+  .MovieList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .MovieList__item {
+    width: 200px;
+  }
+}
+
+@media only screen and (min-width: 1140px) {
+  .MovieList {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
